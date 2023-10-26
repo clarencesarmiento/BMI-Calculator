@@ -14,7 +14,7 @@ An Application that calculates Body Mass Index (BMI) based on height in centimet
 
 ## Features
 
-- Dynamie Real-Time Calculations
+- Dynamic Real-Time Calculations
 - Dual Input Methods
 - Instant BMI Category Display
 
