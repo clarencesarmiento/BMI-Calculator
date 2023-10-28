@@ -47,12 +47,6 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Navigate to frontend folder 
-
-```
-cd \BMI-Calculator\frontend
-```
-
 Run the App
 
 ```
