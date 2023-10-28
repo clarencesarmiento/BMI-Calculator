@@ -35,16 +35,22 @@ Clone the project
 git clone https://github.com/clarencesarmiento/BMI-Calculator.git
 ```
 
-Go to the project directory and navigate to frontend folder
+Go to the project directory
 
 ```
-cd \BMI-Calculator\frontend
+cd \BMI-Calculator
 ```
 
 Install dependencies
 
 ```
 pip install -r requirements.txt
+```
+
+Navigate to frontend folder 
+
+```
+cd \BMI-Calculator\frontend
 ```
 
 Run the App
