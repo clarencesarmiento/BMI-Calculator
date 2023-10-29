@@ -36,7 +36,9 @@ def get_bmi_category(bmi: float or int) -> str:
     if not isinstance(bmi, (float, int)):
         raise TypeError('bmi must be of type float or int')
 
-    if bmi < 18.5:
+    if bmi == 0:
+        return 'Inhuman'
+    elif bmi < 18.5:
         return 'Underweight'
     elif 18.5 <= bmi < 24.9:
         return 'Normal Weight'
