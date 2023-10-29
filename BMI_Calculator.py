@@ -56,7 +56,7 @@ class CalculateFrame(ctk.CTkFrame):
         self.height_label = self.create_label(self, text='HEIGHT (cm)', font_used='helvetica', fontsize=16)
         self.height_label.grid(row=1, column=0, pady=(0, 10), sticky='ew')
 
-        self.height_slider = self.create_slider(self, min_value=0, max_value=300,
+        self.height_slider = self.create_slider(self, min_value=0, max_value=200,
                                                 command=lambda value: self.update_entry_value(value, self.height_var))
 
         self.height_slider.grid(row=2, column=0, sticky='ew')
@@ -70,7 +70,7 @@ class CalculateFrame(ctk.CTkFrame):
         self.weight_label = self.create_label(self, text='WEIGHT (kg)', font_used='helvetica', fontsize=16)
         self.weight_label.grid(row=4, column=0, pady=10, sticky='ew')
 
-        self.weight_slider = self.create_slider(self, min_value=0, max_value=700,
+        self.weight_slider = self.create_slider(self, min_value=0, max_value=100,
                                                 command=lambda value: self.update_entry_value(value, self.weight_var))
         self.weight_slider.grid(row=5, column=0, sticky='ew')
 
@@ -87,14 +87,9 @@ class CalculateFrame(ctk.CTkFrame):
         self.category.grid(row=8, column=0, sticky='w')
 
         # Event - Binding to Entry Widgets
-        self.height_entry.bind("<FocusOut>",
+        self.height_entry.bind("<KeyRelease>",
                                lambda event: self.update_slider_value(self.height_slider, self.height_var))
-        self.height_entry.bind("<Return>",
-                               lambda event: self.update_slider_value(self.height_slider, self.height_var))
-
-        self.weight_entry.bind("<FocusOut>",
-                               lambda event: self.update_slider_value(self.weight_slider, self.weight_var))
-        self.weight_entry.bind("<Return>",
+        self.weight_entry.bind("<KeyRelease>",
                                lambda event: self.update_slider_value(self.weight_slider, self.weight_var))
 
     @staticmethod
