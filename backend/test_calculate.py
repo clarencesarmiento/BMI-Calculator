@@ -35,6 +35,7 @@ def test_invalid_input_type():
 
 
 def test_category():
+    assert get_bmi_category(0.0) == 'Inhuman'
     assert get_bmi_category(16.0) == 'Underweight'
     assert get_bmi_category(21.1) == 'Normal Weight'
     assert get_bmi_category(28.0) == 'Overweight'
