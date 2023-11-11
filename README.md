@@ -1,7 +1,7 @@
 
 # BMI Calculator App
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/clarencesarmiento/BMI-Calculator/blob/a2e30890a9bd5f0470d6b4cebc8dafddd4f9f541/LICENSE.md)
 
 An Application that calculates Body Mass Index (BMI) based on height in centimeter and weight in kilograms. 
 
